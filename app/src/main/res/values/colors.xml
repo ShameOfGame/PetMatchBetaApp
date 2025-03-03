@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Grundfarben -->
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <!-- Primärfarben -->
+    <color name="primaryColor">#008577</color>
+    <color name="primaryDarkColor">#00574B</color>
+    <color name="accentColor">#D81B60</color>
+
+    <!-- Fehlende Farben -->
+    <color name="purple_200">#BB86FC</color>
+    <color name="purple_500">#6200EE</color>
+    <color name="purple_700">#3700B3</color>
+    <color name="teal_200">#03DAC5</color>
+    <color name="teal_700">#018786</color>
+
+    <!-- Zusätzliche Farben für Status -->
+    <color name="successGreen">#4CAF50</color> <!-- Für positive Rückmeldungen -->
+    <color name="errorRed">#F44336</color>    <!-- Für Fehleranzeigen -->
+
+    <!-- Hintergrundfarben -->
+    <color name="lightGray">#E0E0E0</color>  <!-- Für neutrale Hintergründe -->
+    <color name="backgroundGray">#F5F5F5</color>
+</resources>

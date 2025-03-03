@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <!-- Container für Bild und Upload-Button -->
+    <LinearLayout
+        android:id="@+id/left_container"
+        android:orientation="vertical"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintWidth_percent="0.25">
+
+        <!-- Profilbild -->
+        <ImageView
+            android:id="@+id/ivProfilbild"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:scaleType="centerCrop"
+            android:adjustViewBounds="true"
+            android:src="@drawable/ic_default_profile" />
+
+        <!-- Button zum Bild hochladen -->
+        <Button
+            android:id="@+id/btnProfilbildHochladen"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/button_upload_image" />
+    </LinearLayout>
+
+    <!-- Rechte Seite mit den Eingabefeldern -->
+    <ScrollView
+        android:id="@+id/scrollViewProfile"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintStart_toEndOf="@id/left_container"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- Überschrift Haustier -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Haustier"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:layout_marginBottom="8dp" />
+
+            <!-- Eingabefelder für Haustier -->
+            <EditText
+                android:id="@+id/etHaustierName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Name des Haustiers" />
+
+            <EditText
+                android:id="@+id/edit_tier_geburtsdatum"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Geburtsdatum"
+                android:inputType="date" />
+
+            <EditText
+                android:id="@+id/edit_tier_rasse"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Rasse" />
+
+            <!-- Spinner Geschlecht -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Geschlecht:"
+                android:layout_marginTop="8dp" />
+
+            <Spinner
+                android:id="@+id/spinner_geschlecht"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <!-- Spinner Kastriert -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Kastriert:"
+                android:layout_marginTop="8dp" />
+
+            <Spinner
+                android:id="@+id/spinner_kastriert"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <EditText
+                android:id="@+id/edit_das_mag_ich"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Das mag ich" />
+
+            <EditText
+                android:id="@+id/edit_das_mag_ich_nicht"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Das mag ich nicht" />
+
+
+            <!-- Buttons -->
+            <Button
+                android:id="@+id/btnSpeichern"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Speichern" />
+
+            <Button
+                android:id="@+id/btnBearbeiten"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Bearbeiten" />
+
+            <Button
+                android:id="@+id/btnZurueckFeed"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Zurück" />
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

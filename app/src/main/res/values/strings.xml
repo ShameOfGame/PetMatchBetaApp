@@ -1,0 +1,42 @@
+<resources>
+    <!-- App-Name -->
+    <string name="app_name">PetMatchBeta</string>
+
+    <!-- Registrierung Strings -->
+    <string name="checkbox_zustimmung">Ich stimme den Nutzungsbedingungen zu</string>
+    <string name="benutzername">Benutzername</string>
+    <string name="email_adresse">E-Mail-Adresse</string>
+    <string name="email_wiederholen">E-Mail-Adresse wiederholen</string>
+    <string name="kennwort">Kennwort</string>
+    <string name="kennwort_wiederholen">Kennwort wiederholen</string>
+    <string name="kennwort_bedingungen">Kennwort muss folgende Kriterien erfüllen:</string>
+    <string name="kennwort_zeichen">Mindestens 8 Zeichen</string>
+    <string name="kennwort_sonderzeichen">Mindestens 1 Sonderzeichen</string>
+    <string name="kennwort_zahl">Mindestens 1 Zahl</string>
+    <string name="kennwort_grossbuchstabe">Mindestens 1 Großbuchstabe</string>
+    <string name="registrieren">Registrieren</string>
+
+    <!-- Feed Strings -->
+    <string name="button_upload_image">Bild hochladen</string>
+    <string name="contact_user">Kontaktieren</string>
+
+    <!-- Profil Strings -->
+    <string name="profile_image">Profilbild</string>
+    <string name="feed_title">Beitrag Titel</string>
+    <string name="feed_content">Beitrag Inhalt</string>
+    <string name="button_contact">Kontaktieren</string>
+
+    <!-- Spinner-Optionen -->
+    <string-array name="geschlecht_options">
+        <item>Weiblich</item>
+        <item>Männlich</item>
+    </string-array>
+    <string-array name="kastriert_options">
+        <item>Nein</item>
+        <item>Ja</item>
+    </string-array>
+
+    <!-- Überschriften -->
+    <string name="header_haustier">Haustier</string>
+    <string name="header_halter">Halter</string>
+</resources>

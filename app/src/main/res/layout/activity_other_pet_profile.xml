@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <!-- Linker Bereich: Profilbild  -->
+    <LinearLayout
+        android:id="@+id/left_container"
+        android:orientation="vertical"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintWidth_percent="0.25"
+        tools:ignore="MissingConstraints">
+
+        <!-- Profilbild -->
+        <ImageView
+            android:id="@+id/ivProfilbildOther"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ic_default_profile" />
+    </LinearLayout>
+
+    <!-- Rechter Bereich: Anzeige der Profil-Daten (nicht editierbar) -->
+    <ScrollView
+        android:id="@+id/scrollViewProfileOther"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintStart_toEndOf="@id/left_container"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        tools:ignore="MissingConstraints">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- Überschrift Haustier -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Haustier"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:layout_marginBottom="8dp" />
+
+            <!-- Eingabefelder für Haustier (nicht editierbar) -->
+            <EditText
+                android:id="@+id/etHaustierNameOther"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Name des Haustiers"
+                android:enabled="false"
+                android:focusable="false"
+                android:clickable="false" />
+
+            <EditText
+                android:id="@+id/edit_tier_geburtsdatumOther"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Geburtsdatum"
+                android:inputType="date"
+                android:enabled="false"
+                android:focusable="false"
+                android:clickable="false" />
+
+            <EditText
+                android:id="@+id/edit_tier_rasseOther"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Rasse"
+                android:enabled="false"
+                android:focusable="false"
+                android:clickable="false" />
+
+            <!-- Geschlecht -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Geschlecht:"
+                android:layout_marginTop="8dp" />
+
+            <EditText
+                android:id="@+id/tvGeschlechtOther"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Weiblich/Männlich"
+                android:enabled="false"
+                android:focusable="false"
+                android:clickable="false" />
+
+            <!-- Kastriert -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Kastriert:"
+                android:layout_marginTop="8dp" />
+
+            <EditText
+                android:id="@+id/tvKastriertOther"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Ja/Nein"
+                android:enabled="false"
+                android:focusable="false"
+                android:clickable="false" />
+
+            <EditText
+                android:id="@+id/edit_das_mag_ichOther"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Das mag ich"
+                android:enabled="false"
+                android:focusable="false"
+                android:clickable="false" />
+
+            <EditText
+                android:id="@+id/edit_das_mag_ich_nichtOther"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Das mag ich nicht"
+                android:enabled="false"
+                android:focusable="false"
+                android:clickable="false" />
+
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

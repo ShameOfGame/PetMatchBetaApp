@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Nutzerbedingungen in einem ScrollView -->
+        <ScrollView
+            android:id="@+id/scroll_nutzerbedingungen"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:scrollbars="vertical">
+
+            <TextView
+                android:id="@+id/nutzerbedingungen_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#E0E0E0"
+                android:padding="10dp"
+                android:text="1. Allgemeine Bestimmungen:
+Willkommen bei PetMatchBeta! Mit der Nutzung dieser App erklären Sie sich mit den folgenden Bedingungen einverstanden. Bitte lesen Sie diese sorgfältig, bevor Sie fortfahren.
+
+2. Nutzung der App:
+PetMatchBeta ist eine Plattform, die es Tierhaltern ermöglicht, sich zu vernetzen, Informationen auszutauschen und Spielkameraden für ihre Haustiere zu finden.
+- Die App darf ausschließlich für den persönlichen Gebrauch genutzt werden.
+- Sie sind dafür verantwortlich, wahrheitsgemäße Angaben in Ihrem Profil zu machen, insbesondere zu Ihrem Haustier und Ihrem Wohnort.
+
+3. Schutz der Daten:
+- Ihre persönlichen Daten werden nur für die Funktion der App genutzt und nicht ohne Ihre Zustimmung an Dritte weitergegeben.
+- Sie sind dafür verantwortlich, keine sensiblen oder vertraulichen Informationen in Ihrem Profil oder in Nachrichten zu teilen.
+
+4. Sicherheit der Tiere:
+PetMatchBeta legt großen Wert auf das Wohl der Tiere. Sie verpflichten sich:
+- Die Sicherheit Ihres Haustieres zu gewährleisten, insbesondere bei Treffen mit anderen Nutzern.
+- Sich an lokale Vorschriften zur Tierhaltung zu halten (z. B. Leinenpflicht, Impfungen).
+- Keine gefährlichen oder unangebrachten Inhalte zu teilen, die die Sicherheit anderer Tiere oder Personen gefährden könnten.
+
+5. Verantwortung des Nutzers:
+- Die Nutzung der App erfolgt auf eigenes Risiko.
+- PetMatchBeta übernimmt keine Haftung für Schäden, die durch die Interaktion mit anderen Nutzern entstehen.
+- Sie verpflichten sich, andere Nutzer respektvoll zu behandeln und die App nicht für rechtswidrige oder unangemessene Zwecke zu verwenden.
+
+6. Regeln für die Community:
+- Beleidigungen, Hassrede, Spam oder andere unangemessene Inhalte werden nicht toleriert und führen zur Sperrung des Accounts.
+- Alle Inhalte, die Sie in der App teilen, müssen den geltenden Gesetzen entsprechen.
+
+7. Änderungen der Bedingungen:
+PetMatchBeta behält sich das Recht vor, diese Bedingungen jederzeit zu ändern. Änderungen werden in der App bekannt gegeben. Mit der weiteren Nutzung der App nach einer Änderung erklären Sie sich mit den neuen Bedingungen einverstanden.
+
+8. Kontakt:
+Bei Fragen oder Problemen mit der App können Sie sich jederzeit an uns wenden: support@petmatch.com."
+                android:textColor="#000000"
+                android:textSize="12sp" />
+        </ScrollView>
+
+        <CheckBox
+            android:id="@+id/checkbox_zustimmung"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/checkbox_zustimmung"
+            android:layout_marginTop="10dp" />
+
+        <!-- Benutzername -->
+        <EditText
+            android:id="@+id/benutzername"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:hint="@string/benutzername"
+            android:inputType="textPersonName"
+            android:layout_marginTop="10dp"
+            android:autofillHints="username"
+            android:textSize="14sp" />
+
+        <!-- E-Mail-Adresse -->
+        <EditText
+            android:id="@+id/email_adresse"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:hint="@string/email_adresse"
+            android:inputType="textEmailAddress"
+            android:layout_marginTop="10dp"
+            android:autofillHints="emailAddress"
+            android:textSize="14sp" />
+
+        <!-- E-Mail-Adresse wiederholen -->
+        <EditText
+            android:id="@+id/email_wiederholen"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:hint="@string/email_wiederholen"
+            android:inputType="textEmailAddress"
+            android:layout_marginTop="10dp"
+            android:autofillHints="emailAddress"
+            android:textSize="14sp" />
+
+        <!-- Kennwort -->
+        <EditText
+            android:id="@+id/kennwort"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:hint="@string/kennwort"
+            android:inputType="textPassword"
+            android:layout_marginTop="10dp"
+            android:autofillHints="password"
+            android:textSize="14sp" />
+
+        <!-- Kennwort wiederholen -->
+        <EditText
+            android:id="@+id/kennwort_wiederholen"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:hint="@string/kennwort_wiederholen"
+            android:inputType="textPassword"
+            android:layout_marginTop="10dp"
+            android:autofillHints="password"
+            android:textSize="14sp" />
+
+        <!-- Kennwort-Voraussetzungen -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="10dp"
+            android:padding="10dp"
+            android:background="#F0F0F0">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/kennwort_bedingungen"
+                android:textStyle="bold"
+                android:textSize="14sp"
+                android:layout_marginBottom="10dp" />
+
+            <TextView
+                android:id="@+id/kennwort_bedingung_zeichen"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/kennwort_zeichen"
+                android:textSize="12sp"
+                android:layout_marginBottom="5dp" />
+
+            <TextView
+                android:id="@+id/kennwort_bedingung_sonderzeichen"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/kennwort_sonderzeichen"
+                android:textSize="12sp"
+                android:layout_marginBottom="5dp" />
+
+            <TextView
+                android:id="@+id/kennwort_bedingung_zahl"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/kennwort_zahl"
+                android:textSize="12sp"
+                android:layout_marginBottom="5dp" />
+
+            <TextView
+                android:id="@+id/kennwort_bedingung_grossbuchstabe"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/kennwort_grossbuchstabe"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+        <!-- Button Registrieren -->
+        <Button
+            android:id="@+id/btn_registrieren"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="@string/registrieren"
+            android:backgroundTint="#6200EE"
+            android:textColor="#FFFFFF" />
+    </LinearLayout>
+</ScrollView>
